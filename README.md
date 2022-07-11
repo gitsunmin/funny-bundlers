@@ -3,7 +3,7 @@
 |#|Bundler|Config File|
 |-|--|---|
 |1|[Webpack](https://webpack.kr/guides/)|[webpack.config.js](webpack.config.js)|
-|2|[Rollup](https://rollupjs.org/guide/en/#overview)| - |
+|2|[Rollup](https://rollupjs.org/guide/en/#overview)|[rollup.config.js](rollup.config.js)|
 |3|[Snowpack](https://www.snowpack.dev/tutorials/quick-start)| - |
 |4|[Vite](https://vitejs-kr.github.io/guide/)| - |
 |5|[SWC](https://swc.rs/docs/usage/bundling)| - |
