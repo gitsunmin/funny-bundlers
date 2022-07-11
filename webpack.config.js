@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js" /** 실행의 시작점 */,
+  entry: path.resolve(__dirname, "src/index.js") /** 실행의 시작점 */,
   mode: "development" /** 개발환경별로 webpack의 내장기능 사용가능합니다. @Link https://webpack.kr/configuration/mode/#root */,
   devtool:
     "inline-source-map" /** devtool 옵션은 소스맵 생성 여부와 방법을 제어합니다. @Link https://webpack.kr/configuration/devtool/ */,
