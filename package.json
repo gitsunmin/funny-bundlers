@@ -7,7 +7,7 @@
     "dev": "webpack serve --open",
     "build:wp": "webpack",
     "build:ru": "rollup -c",
-    "build:sp": "snowpack build --config",
+    "build:sp": "snowpack build",
     "clean": "rm -rf dist"
   },
   "keywords": [],
