@@ -22,11 +22,11 @@ export default {
   input: resolve(__dirname, "src/index.js") /** 실행의 시작점 */,
   output: [
     {
-      file: resolve(__dirname, "dist/bundle.js"),
+      file: resolve(__dirname, "dist/index.js"),
       format: "cjs",
     },
     {
-      file: resolve(__dirname, "dist/bundle.min.js"),
+      file: resolve(__dirname, "dist/index.min.js"),
       format: "iife",
       name: "version",
       plugins: [html(HTML_OPTIONS), terser()],

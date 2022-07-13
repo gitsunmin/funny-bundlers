@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "webpack serve --open",
     "build:wp": "webpack",
-    "build:ru": "rollup -c",
+    "build:ru": "rollup --config",
     "build:sp": "snowpack build",
     "clean": "rm -rf dist"
   },
-  "keywords": [],
+  "keywords": ["bundler", "webpack", "rollup", "snowpack"],
   "author": "gitsunmin",
-  "license": "MIC",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-html": "^0.2.4",
     "css-loader": "^6.7.1",

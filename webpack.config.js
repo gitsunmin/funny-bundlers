@@ -16,13 +16,13 @@ module.exports = {
     runtimeChunk: "single",
   } /** @Link https://webpack.kr/configuration/optimization/#root */,
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].index.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "assets/[hash][ext][query]",
   } /** webpack의 build 결과물에 대한 설정 @Link https://webpack.kr/configuration/output/#root */,
   plugins: [
     new HtmlWebpackPlugin({
-      title: "from webpack",
+      title: "Hello Webpack",
     }),
   ] /** @Link https://webpack.kr/plugins/#root */,
   module: {
