@@ -5,8 +5,6 @@
 |-|--|---|---|
 |1|[Webpack](https://webpack.kr/guides/)|[webpack.config.js](webpack.config.js)|⭐⭐⭐⭐⭐(레퍼런스가 많고, 범용적이다.)|
 |2|[Rollup](https://rollupjs.org/guide/en/#overview)|[rollup.config.js](rollup.config.js)|-|
-|3|[Snowpack](https://www.snowpack.dev/tutorials/quick-start)| - |-|
-|4|[Vite](https://vitejs-kr.github.io/guide/)| - |-|
-|5|[SWC](https://swc.rs/docs/usage/bundling)| - |-|
-|6|[Esbuild](https://esbuild.github.io/)| - |-|
-|6|[Parcel](https://ko.parceljs.org/)| - |-|
+|3|[SWC](https://swc.rs/docs/usage/bundling)| - |-|
+|4|[Esbuild](https://esbuild.github.io/)| - |-|
+|5|[Parcel](https://ko.parceljs.org/)| - |-|

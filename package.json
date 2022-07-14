@@ -7,10 +7,13 @@
     "dev": "webpack serve --open",
     "build:wp": "webpack",
     "build:ru": "rollup --config",
-    "build:sp": "snowpack build",
     "clean": "rm -rf dist"
   },
-  "keywords": ["bundler", "webpack", "rollup", "snowpack"],
+  "keywords": [
+    "bundler",
+    "webpack",
+    "rollup"
+  ],
   "author": "gitsunmin",
   "license": "MIT",
   "devDependencies": {
@@ -19,7 +22,6 @@
     "html-webpack-plugin": "^5.5.0",
     "rollup": "^2.76.0",
     "rollup-plugin-terser": "^7.0.2",
-    "snowpack": "^3.8.8",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
