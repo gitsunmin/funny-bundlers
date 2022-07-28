@@ -5,5 +5,5 @@
 |-|--|---|---|
 |1|[Webpack](https://webpack.kr/guides/)|[webpack.config.js](webpack.config.js)|⭐⭐⭐⭐⭐(레퍼런스가 많고, 범용적이다.)|
 |2|[Rollup](https://rollupjs.org/guide/en/#overview)|[rollup.config.js](rollup.config.js)|-|
-|3|[Esbuild](https://esbuild.github.io/)|[esbuild.run.js](esbuild.run.js)|-|
+|3|[Esbuild](https://esbuild.github.io/)|[esbuild.run.js](esbuild.config.js)|-|
 |4|[Parcel](https://ko.parceljs.org/)| - |-|
