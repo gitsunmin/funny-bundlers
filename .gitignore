@@ -6,3 +6,6 @@ node_modules/
 
 # build output 파일들
 dist/
+
+# build cache
+.cache

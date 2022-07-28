@@ -8,6 +8,7 @@
     "build:wp": "webpack",
     "build:ru": "rollup --config",
     "build:es": "node esbuild.run.js",
+    "build:pc": "parcel src/index.js",
     "clean": "rm -rf dist"
   },
   "keywords": [
@@ -22,6 +23,7 @@
     "css-loader": "^6.7.1",
     "esbuild": "^0.14.51",
     "html-webpack-plugin": "^5.5.0",
+    "parcel-bundler": "^1.12.5",
     "rollup": "^2.76.0",
     "rollup-plugin-terser": "^7.0.2",
     "style-loader": "^3.3.1",
