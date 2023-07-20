@@ -1,4 +1,4 @@
-# Funny Bundler
+# Funny Bundlers
 
 ```shell
 npm start
