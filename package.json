@@ -1,14 +1,14 @@
 {
-  "name": "bundler-tester",
+  "name": "funny-bundler",
   "version": "1.0.0",
-  "description": "testing bundlers",
+  "description": "for test bundlers",
   "private": true,
   "scripts": {
     "dev": "webpack serve --open",
-    "build:wp": "webpack",
-    "build:ru": "rollup --config",
-    "build:es": "node esbuild.run.js",
-    "build:pc": "parcel src/index.js",
+    "build:w": "webpack",
+    "build:r": "rollup --config",
+    "build:e": "node esbuild.run.js",
+    "build:p": "parcel src/index.js",
     "clean": "rm -rf dist"
   },
   "keywords": [
