@@ -6,6 +6,9 @@ node_modules/
 
 # build output 파일들
 dist/
+webpack_dist
+rollup_dist
+esbuild_dist
 
 # build cache
 .cache

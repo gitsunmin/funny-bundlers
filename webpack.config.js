@@ -17,7 +17,7 @@ module.exports = {
   } /** @Link https://webpack.kr/configuration/optimization/#root */,
   output: {
     filename: "[name].index.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "webpack_dist"),
     assetModuleFilename: "assets/[hash][ext][query]",
   } /** webpack의 build 결과물에 대한 설정 @Link https://webpack.kr/configuration/output/#root */,
   plugins: [
