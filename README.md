@@ -16,4 +16,4 @@ It's a project to test "bundlers."
 
 ## Run screen
 
-![Funny_Bundlers](.assets/cli-iamge.png)
+![Funny_Bundlers](.assets/image1.png)
