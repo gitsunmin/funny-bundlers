@@ -1,3 +1,4 @@
-const option = require('./esbuild.config.js');
+import option from "./esbuild.config.js";
+import esbuild from "esbuild";
 
-require('esbuild').build(option).catch(() => process.exit(1))
+esbuild.build(option).catch(() => process.exit(1));

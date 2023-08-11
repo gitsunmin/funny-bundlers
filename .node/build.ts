@@ -14,14 +14,18 @@ export default async (builder: Builder, color: color) => {
   const spinner = runSpinner(coloring(`${builder} running...`));
   const end = timer();
 
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     exec(`npm run build:${builder}`, (_error) => {
-      const runningTime = end();
-      spinner.succeed(`${coloring(`${builder} running time: ${runningTime}`)}`);
-      resolve({
-        builder,
-        runningTime,
-      });
+      if (_error === null) {
+        const runningTime = end();
+        spinner.succeed(
+          `${coloring(`${builder} running time: ${runningTime}`)}`
+        );
+        resolve({
+          builder,
+          runningTime,
+        });
+      } else reject(_error);
     });
   });
 };

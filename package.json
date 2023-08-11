@@ -8,7 +8,8 @@
     "start": "tsx .node",
     "build:webpack": "webpack",
     "build:rollup": "rollup --config",
-    "build:esbuild": "node esbuild.run.js"
+    "build:esbuild": "node esbuild.run.js",
+    "clean": "rm -rf rollup_dist webpack_dist esbuild_dist && npm cache clean --force && npm cache verify"
   },
   "keywords": [
     "bundler",
