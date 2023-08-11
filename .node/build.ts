@@ -7,9 +7,9 @@ import timer from "./timer";
 
 export type Builder = "esbuild" | "rollup" | "webpack";
 
-export type color = "#8DD6F9" | "#EC4A3F" | "#FFCF00";
+export type Color = "#8DD6F9" | "#EC4A3F" | "#FFCF00";
 
-export default async (builder: Builder, color: color) => {
+export default async (builder: Builder, color: Color) => {
   const coloring = chalk.hex(color);
   const spinner = runSpinner(coloring(`${builder} running...`));
   const end = timer();
