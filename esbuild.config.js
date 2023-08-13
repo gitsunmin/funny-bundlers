@@ -1,9 +1,10 @@
 import { htmlPlugin } from "@craftamap/esbuild-plugin-html";
 
 export default {
-  entryPoints: ["src/index.jsx"],
+  entryPoints: ["src/index.js"],
   bundle: true,
   outdir: "esbuild_dist",
+  loader: { ".js": "jsx" },
   metafile: true,
   plugins: [
     htmlPlugin({
@@ -12,7 +13,7 @@ export default {
       },
       files: [
         {
-          entryPoints: ["src/index.jsx"],
+          entryPoints: ["src/index.js"],
           filename: "index.html",
           htmlTemplate: `
             <!DOCTYPE html>

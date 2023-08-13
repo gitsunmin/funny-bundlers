@@ -23,11 +23,31 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Hello Webpack",
+      templateContent: ({ htmlWebpackPlugin }) => `
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+      <title>${htmlWebpackPlugin.options.title}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+      <div id="root"></div>
+    </body>
+    <script src="main.index.js"></script>
+    <script defer src="runtime.index.js"></script><script defer src="main.index.js"></script></head>
+</html>
+      `,
     }),
   ] /** @Link https://webpack.kr/plugins/#root */,
   module: {
     /** @Link https://webpack.kr/configuration/module/#root */
     rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: "babel-loader",
+      },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
@@ -41,5 +61,8 @@ export default {
         type: "asset/resource",
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
   },
 };
